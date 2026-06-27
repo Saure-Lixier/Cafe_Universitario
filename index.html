@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Café Universitario</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <h1>Café Universitario</h1>
+
+    </div>
+
+</header>
+
+<nav>
+
+    <ul>
+
+        <li><a href="#banner">Inicio</a></li>
+
+        <li><a href="#nosotros">Nosotros</a></li>
+
+        <li><a href="#productos">Productos</a></li>
+
+        <li><a href="#contacto">Contacto</a></li>
+
+    </ul>
+
+</nav>
+
+<main>
+
+<section id="banner">
+
+<section id="nosotros">
+
+    <h2>Nosotros</h2>
+
+    <p>
+
+        Café Universitario nace con el propósito de ofrecer café de calidad,
+        productos frescos y un ambiente acogedor para estudiantes,
+        docentes y visitantes.
+
+    </p>
+
+    <ul>
+
+        <li>Café de especialidad</li>
+
+        <li>Pastelería artesanal</li>
+
+        <li>Ambiente cómodo para estudiar</li>
+
+    </ul>
+
+</section>
+
+<section id="productos">
+
+    <h2>Nuestros Productos</h2>
+
+    <div class="contenedor-productos">
+
+        <article class="producto">
+
+            <img src="img/espresso.jpg" alt="Café Espresso">
+
+            <h3>Espresso</h3>
+
+            <p>
+                Café intenso preparado con granos seleccionados.
+            </p>
+
+            <h4>$2.500</h4>
+
+        </article>
+
+        <article class="producto">
+
+            <img src="img/latte.jpg" alt="Café Latte">
+
+            <h3>Latte</h3>
+
+            <p>
+                Espresso acompañado de leche vaporizada.
+            </p>
+
+            <h4>$3.200</h4>
+
+        </article>
+
+        <article class="producto">
+
+            <img src="img/capuccino.jpg" alt="Capuccino">
+
+            <h3>Capuccino</h3>
+
+            <p>
+                Café cremoso con espuma de leche y cacao.
+            </p>
+
+            <h4>$3.500</h4>
+
+        </article>
+
+    </div>
+
+</section>
+
+<section id="contacto">
+
+    <h2>Solicitud de Información</h2>
+
+    <form id="formulario">
+
+        <label for="nombre">
+            Nombre completo
+        </label>
+
+        <input
+            type="text"
+            id="nombre"
+            required>
+
+        <label for="correo">
+            Correo electrónico
+        </label>
+
+        <input
+            type="email"
+            id="correo"
+            required>
+
+        <label for="telefono">
+            Teléfono
+        </label>
+
+        <input
+            type="tel"
+            id="telefono"
+            required>
+
+        <label for="producto">
+            Producto de interés
+        </label>
+
+        <select id="producto">
+
+            <option>Espresso</option>
+
+            <option>Latte</option>
+
+            <option>Capuccino</option>
+
+        </select>
+
+        <label for="comentario">
+            Comentario
+        </label>
+
+        <textarea
+            id="comentario"
+            rows="5">
+        </textarea>
+
+        <button type="submit">
+
+            Enviar Solicitud
+
+        </button>
+
+    </form>
+
+</section>
+
+<section id="solicitudes">
+
+    <h2>Solicitudes Registradas</h2>
+
+    <table>
+
+        <thead>
+
+            <tr>
+
+                <th>Nombre</th>
+
+                <th>Producto</th>
+
+                <th>Correo</th>
+
+            </tr>
+
+        </thead>
+
+        <tbody id="tablaSolicitudes">
+
+        </tbody>
+
+    </table>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+
+        © 2026 Café Universitario.
+        Todos los derechos reservados.
+
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
