@@ -1,0 +1,406 @@
+/* ===========================
+   RESET GENERAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#F8F5F2;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#4E342E;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+}
+
+/* ===========================
+   NAV
+=========================== */
+
+nav{
+
+    background:#6D4C41;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    list-style:none;
+
+}
+
+nav li{
+
+    margin:15px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#D7CCC8;
+
+}
+
+/* ===========================
+   BANNER
+=========================== */
+
+#banner{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    background:#D7CCC8;
+
+}
+
+#banner h2{
+
+    font-size:2.4rem;
+
+    margin-bottom:20px;
+
+}
+
+#banner p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+}
+
+button{
+
+    background:#8D6E63;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#4E342E;
+
+}
+
+section{
+
+    padding:60px;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+    color:#4E342E;
+
+}
+
+#nosotros p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+#nosotros ul{
+
+    margin-top:20px;
+
+    text-align:center;
+
+    list-style:none;
+
+}
+
+#nosotros li{
+
+    margin:10px;
+
+}
+
+/* ===========================
+   PRODUCTOS
+=========================== */
+
+#productos{
+
+    text-align:center;
+
+}
+
+.contenedor-productos{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+    margin-top:40px;
+
+}
+
+.producto{
+
+    background:white;
+
+    width:320px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.producto:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.producto img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+.producto h3{
+
+    margin-top:20px;
+
+    color:#4E342E;
+
+}
+
+.producto p{
+
+    margin:15px 0;
+
+}
+
+.producto h4{
+
+    color:#8D6E63;
+
+    font-size:22px;
+
+}
+
+/* ===========================
+   FORMULARIO
+=========================== */
+
+form{
+
+    max-width:700px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+label{
+
+    font-weight:bold;
+
+    color:#4E342E;
+
+}
+
+input,
+select,
+textarea{
+
+    padding:12px;
+
+    border:1px solid #CCC;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+textarea{
+
+    resize:vertical;
+
+}
+
+/* ===========================
+   TABLA
+=========================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:30px;
+
+}
+
+th{
+
+    background:#6D4C41;
+
+    color:white;
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #DDD;
+
+    text-align:center;
+
+}
+
+tr:nth-child(even){
+
+    background:#F2F2F2;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#4E342E;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:50px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    nav ul{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    section{
+
+        padding:30px;
+
+    }
+
+    #banner h2{
+
+        font-size:2rem;
+
+    }
+
+    .producto{
+
+        width:100%;
+
+    }
+
+}
+
