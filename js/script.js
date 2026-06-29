@@ -5,46 +5,65 @@
 const formulario = document.getElementById("formulario");
 
 const nombre = document.getElementById("nombre");
-
 const correo = document.getElementById("correo");
-
 const telefono = document.getElementById("telefono");
-
 const producto = document.getElementById("producto");
-
 const comentario = document.getElementById("comentario");
 
-const tabla = document.getElementById("tablaSolicitudes");
+const tablaSolicitudes = document.getElementById("tablaSolicitudes");
 
 //============================
-// EVENTO DEL FORMULARIO
+// FUNCIONES
 //============================
 
-formulario.addEventListener("submit", function(event){
-
-    event.preventDefault();
-
-});
-
-formulario.addEventListener("submit", function(event){
-
-    event.preventDefault();
+function crearFila(nombreCliente, productoCliente, correoCliente){
 
     const fila = document.createElement("tr");
 
     fila.innerHTML = `
-
-        <td>${nombre.value}</td>
-
-        <td>${producto.value}</td>
-
-        <td>${correo.value}</td>
-
+        <td>${nombreCliente}</td>
+        <td>${productoCliente}</td>
+        <td>${correoCliente}</td>
     `;
 
-    tabla.appendChild(fila);
+    tablaSolicitudes.appendChild(fila);
+
+}
+
+function limpiarFormulario(){
 
     formulario.reset();
 
-});
+}
 
+function registrarSolicitud(event){
+
+    event.preventDefault();
+
+    if(nombre.value.trim()===""){
+
+        alert("Ingrese un nombre.");
+
+        return;
+
+    }
+
+    crearFila(
+
+        nombre.value,
+
+        producto.value,
+
+        correo.value
+
+    );
+
+    limpiarFormulario();
+
+}
+
+//============================
+// EVENTOS
+//============================
+
+formulario.addEventListener("submit", registrarSolicitud);

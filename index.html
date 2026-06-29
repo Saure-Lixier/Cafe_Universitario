@@ -10,7 +10,15 @@
 
     <title>Café Universitario</title>
 
+    <link rel="icon" href="img/favicon.ico">
+
     <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -20,9 +28,12 @@
 
     <div class="logo">
 
-        <h1>Café Universitario</h1>
+    <img src="img/logo.png"
+         alt="Logo Café Universitario">
 
-    </div>
+    <h1>Café Universitario</h1>
+
+</div>
 
 </header>
 
@@ -46,6 +57,19 @@
 
 <section id="banner">
 
+    <h2>El mejor café para acompañar tu vida universitaria</h2>
+
+    <p>
+        Disfruta café de especialidad, pastelería artesanal y un espacio pensado
+        para compartir, estudiar y relajarte.
+    </p>
+
+    <a href="#productos" class="btn-banner">
+        Ver Productos
+    </a>
+
+</section>
+
 <section id="nosotros">
 
     <h2>Nosotros</h2>
@@ -60,11 +84,11 @@
 
     <ul>
 
-        <li>Café de especialidad</li>
+        <li>☕ Café de especialidad</li>
 
-        <li>Pastelería artesanal</li>
+        <li>🥐 Pastelería artesanal</li>
 
-        <li>Ambiente cómodo para estudiar</li>
+        <li>📚 Ambiente cómodo para estudiar</li>
 
     </ul>
 
@@ -78,7 +102,10 @@
 
         <article class="producto">
 
-            <img src="img/espresso.jpg" alt="Café Espresso">
+            <img
+                src="img/espresso.jpg"
+                alt="Café Espresso"
+                loading="lazy">
 
             <h3>Espresso</h3>
 
@@ -92,7 +119,10 @@
 
         <article class="producto">
 
-            <img src="img/latte.jpg" alt="Café Latte">
+            <img
+                src="img/latte.jpg"
+                alt="Café Latte"
+                loading="lazy">
 
             <h3>Latte</h3>
 
@@ -106,7 +136,10 @@
 
         <article class="producto">
 
-            <img src="img/capuccino.jpg" alt="Capuccino">
+            <img
+                src="img/capuccino.jpg"
+                alt="Café Capuccino"
+                loading="lazy">
 
             <h3>Capuccino</h3>
 
@@ -156,18 +189,22 @@
             required>
 
         <label for="producto">
-            Producto de interés
-        </label>
+    Producto de interés
+</label>
 
-        <select id="producto">
+<select id="producto" required>
 
-            <option>Espresso</option>
+    <option value="" selected disabled>
+        Seleccione un producto
+    </option>
 
-            <option>Latte</option>
+    <option>Espresso</option>
 
-            <option>Capuccino</option>
+    <option>Latte</option>
 
-        </select>
+    <option>Capuccino</option>
+
+</select>
 
         <label for="comentario">
             Comentario
@@ -220,11 +257,18 @@
 
 <footer>
 
+    <h3>Café Universitario</h3>
+
     <p>
+        Café de especialidad para estudiantes y amantes del buen café.
+    </p>
 
-        © 2026 Café Universitario.
-        Todos los derechos reservados.
+    <p>
+        contacto@cafeuniversitario.cl
+    </p>
 
+    <p>
+        © 2026 Todos los derechos reservados.
     </p>
 
 </footer>
