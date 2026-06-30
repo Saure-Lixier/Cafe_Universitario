@@ -87,6 +87,8 @@ Durante el desarrollo del proyecto se implementaron las siguientes etapas princi
 | Mejoras visuales | Optimización del diseño y experiencia de usuario. |
 | Modificaciones finales | Ajustes generales y corrección de detalles. |
 | IA_Utilizada | Documentación del uso de herramientas de inteligencia artificial. |
+| Arreglo Ortográfico | Arreglos de ortografía o gramática en Readme e IA.txt |
+| README | Documentación del proyecto de inicio a fin más avances |
 
 ---
 
@@ -107,6 +109,7 @@ Principales commits realizados durante el desarrollo:
 - 90a438c — Mejoras visuales
 - b9e0ac6 — Modificaciones finalizadas
 - b678954 — IA_Utilizada finalizada
+- 20988ae — README.Final del proyecto
 
 ---
 
