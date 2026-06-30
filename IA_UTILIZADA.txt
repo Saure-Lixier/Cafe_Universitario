@@ -26,5 +26,6 @@ Github Copilot (GitHub)
 Uso de la IA:
 
 - Generación de código a partir de instrucciones (prompts).
+- Implementación de nuevas funcionalidades del sitio web.
 
 Todo el código generado con herramientas de inteligencia artificial fue revisado, comprendido, adaptado y validado antes de ser incorporado al proyecto.
