@@ -1,0 +1,30 @@
+IA UTILIZADA
+
+Herramienta I:
+Claude AI (Anthropic)
+
+Uso de la IA:
+
+- Apoyo en la organización del proyecto.
+- Explicación de conceptos de HTML, CSS y JavaScript.
+- Apoyo para realizar prompts para Github Copilot
+
+Herramienta II:
+ChatGPT (OpenAI)
+
+Uso de la IA:
+
+- Explicación de conceptos de HTML, CSS y JavaScript.
+- Revisión y corrección de errores principales.
+- Optimización de las bases del diseño visual.
+- Orientación sobre Git y GitHub.
+- Recomendaciones de buenas prácticas de programación.
+
+Herramienta III:
+Github Copilot (GitHub)
+
+Uso de la IA:
+
+
+
+Todo el código generado con herramientas de inteligencia artificial fue revisado, comprendido, adaptado y validado antes de ser incorporado al proyecto.

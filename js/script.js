@@ -11,6 +11,23 @@ const producto = document.getElementById("producto");
 const comentario = document.getElementById("comentario");
 
 const tablaSolicitudes = document.getElementById("tablaSolicitudes");
+const badgesPorProducto = {
+
+    "Espresso":"Más vendido",
+    "Latte":"Recomendado",
+    "Capuccino":"Favorito",
+    "Mokaccino":"Nuevo",
+    "Frappuccino":"Frío",
+    "Té Chai":"Aromático",
+    "Té de Manzanilla":"Relajante",
+    "Té Negro":"Clásico",
+    "Té de Frutos Rojos":"Dulce",
+    "Cheesecake":"Especial",
+    "Pie de Limón":"Artesanal",
+    "Brownie":"Chocolate",
+    "Croissant":"Recién horneado"
+
+};
 
 //============================
 // FUNCIONES
@@ -62,8 +79,47 @@ function registrarSolicitud(event){
 
 }
 
+function agregarBadges(){
+
+    const productos = document.querySelectorAll(".producto");
+
+    productos.forEach(producto => {
+
+        const titulo = producto.querySelector("h3");
+
+        if(!titulo){
+
+            return;
+
+        }
+
+        const nombreProducto = titulo.textContent.trim();
+        const etiqueta = badgesPorProducto[nombreProducto] || "Especial";
+        const badge = document.createElement("span");
+
+        badge.className = "producto-badge";
+        badge.textContent = etiqueta;
+
+        const imagen = producto.querySelector("img");
+
+        if(imagen){
+
+            producto.insertBefore(badge, imagen);
+
+        }else{
+
+            producto.prepend(badge);
+
+        }
+
+    });
+
+}
+
 //============================
 // EVENTOS
 //============================
 
 formulario.addEventListener("submit", registrarSolicitud);
+
+agregarBadges();
