@@ -31,3 +31,4 @@ Uso de la IA:
 - Integración de mejoras visuales y de diseño.
 - Automatización de modificaciones repetitivas en HTML, CSS y JavaScript.
 
+Todo el código generado con herramientas de inteligencia artificial fue revisado, comprendido, adaptado y validado antes de ser incorporado al proyecto.
